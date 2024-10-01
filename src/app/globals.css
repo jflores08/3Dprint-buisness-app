@@ -126,7 +126,7 @@
     @apply text-lg font-semibold text-blue-600 transition duration-100 hover:text-primary;
   }
   .CurrentPage{
-    @apply text-lg font-semibold text-primary
+    @apply text-lg font-semibold text-primary underline underline-offset-8
   }
 }
 
