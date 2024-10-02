@@ -13,7 +13,8 @@ pnpm dev
 # or
 bun dev
 ```
-
+## Install Tailwind fluid for Responsive resizing
+npm install -D fluid-tailwind
 
 ## Install hero Icons
 "npm install @heroicons/react"
@@ -21,6 +22,11 @@ bun dev
 ## Install lucide React
 "npm install lucide-react"
 
+## Install shadcn Components
+"npx shadcn@latest init"
+"npx shadcn-ui@latest add dropdown-menu"
+"npx shadcn@latest add button"
+"npx shadcn@latest add sheet"
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

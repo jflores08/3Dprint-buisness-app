@@ -16,6 +16,9 @@ const config: Config = {
       xl: "1440px",
     },
     extend: {
+      fontSize: {
+        clamp: "clamp(1rem, 2vw, 16rem)",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

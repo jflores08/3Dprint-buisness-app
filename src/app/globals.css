@@ -6,13 +6,8 @@
 @layer base {
   :root {
 
-    h1{
-/*       
-      @apply fontSize{
-        clamp: "clamp(1rem, 0.5714285714285714rem + 2.142857142857143vw, 4rem)",
-      }; */
-      
-      @apply mb-4 text-4xl font-bold text-black xs:text-3xl sm:text-4xl md:mb-8 md:text-5xl xl:text-8xl lg:text-6xl
+    h1{   
+      @apply mb-4 text-4xl font-bold text-black xs:text-3xl sm:text-4xl md:mb-8 md:text-5xl lg:text-6xl xl:text-8xl
     }
 
     h2{
