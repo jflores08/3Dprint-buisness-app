@@ -70,11 +70,11 @@
       @apply text-2xl font-bold text-gray-100 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl;
     }
     h4{
-      @apply text-xl font-bold text-gray-200 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
+      @apply text-xl font-bold text-gray-200 lg:mb-6 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
     }
 
     h5{
-      @apply text-lg font-bold text-gray-300 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
+      @apply text-lg font-bold text-gray-300 lg:mb-8 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
     }
 
     /* h6{
