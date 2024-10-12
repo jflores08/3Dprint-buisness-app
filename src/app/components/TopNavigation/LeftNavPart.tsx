@@ -32,7 +32,7 @@ const LeftNavPart: FC<{ pages: { name: string; path: string }[] }> = ({
             {/* If the current page the link is the primary color else it is gray with a hover effect that turns it the primary color */}
             {pathname === link.path ? (
               <Link className="CurrentPage" href={link.path}>
-                {link.name}
+                <h5>{link.name}</h5>
               </Link>
             ) : (
               <Link className="Link" href={link.path}>
