@@ -12,14 +12,14 @@ const config: Config = {
       xs: "320px",
       sm: "425px",
       md: "768px",
-      lg: "976px",
-      xl: "1440px",
-      "2xl": "2560px",
+      lg: "769px",
+      xl: "1280px",
+      "2xl": "1440px",
       "3xl": "2560px",
     },
     extend: {
       fontSize: {
-		sm: "0.8rem",
+        sm: "0.8rem",
         base: "1rem",
         xl: "1.25rem",
         "2xl": "1.563rem",
@@ -31,6 +31,8 @@ const config: Config = {
         "8xl": "6rem",
         "9xl": "8rem",
         "10xl": "10rem",
+        "11xl": "11rem",
+        "12xl": "12rem",
       },
       colors: {
         background: "hsl(var(--background))",
