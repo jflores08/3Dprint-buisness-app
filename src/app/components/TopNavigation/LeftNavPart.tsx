@@ -13,8 +13,8 @@ const LeftNavPart: FC<{ pages: { name: string; path: string }[] }> = ({
 
   return (
     <Fragment>
-      {/* Logo navButton to Home */}
-      <div>
+      {/* Logo navButton to Home with a px of 16px at md screen size */}
+      <div className="md:px-16">
         <Link href={"/"}>
           <Image
             src={"/images/logo/cuativeLogo.png"}
