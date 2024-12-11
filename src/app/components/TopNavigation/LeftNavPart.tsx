@@ -19,20 +19,21 @@ const LeftNavPart: FC<{ pages: { name: string; path: string }[] }> = ({
           <Image
             src={"/images/logo/cuativeLogo.png"}
             alt="Logo"
-            width={200}
+            priority={true}
+            width={500}
             height={100}
           ></Image>
         </Link>
       </div>
       {/* Navbar Links to pages Flexbox */}
-      <div className="hidden gap-12 lg:flex 2xl: ml-16">
+      <div className="hidden gap-12 lg:flex items-center 2xl: ml-16">
         {/* Navbar Links to pages Map function */}
         {pages.map((link, index) => (
           <div key={index}>
             {/* If the current page the link is the primary color else it is gray with a hover effect that turns it the primary color */}
             {pathname === link.path ? (
               <Link className="CurrentPage" href={link.path}>
-                <h5>{link.name}</h5>
+                {link.name}
               </Link>
             ) : (
               <Link className="Link" href={link.path}>

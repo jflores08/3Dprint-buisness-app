@@ -129,7 +129,7 @@
     @apply font-semibold text-blue-600 transition duration-100 hover:text-primary sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl;
   }
   .CurrentPage{
-    @apply text-lg font-semibold text-primary underline underline-offset-8
+    @apply font-semibold text-primary underline underline-offset-8 sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
   }
 }
 
