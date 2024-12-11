@@ -44,6 +44,8 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
                 )}
               </div>
             ))}
+
+            {/* div to center the ModeToggle in the menu*/}
             <div className="flex justify-center">
               <ModeToggle />
             </div>
