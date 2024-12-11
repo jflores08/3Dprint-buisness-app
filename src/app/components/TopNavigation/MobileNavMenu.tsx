@@ -35,11 +35,11 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
               <div key={index} className="flex justify-center">
                 {/* If the current page is the link it is the primary color and underlined */}
                 {pathname === link.path ? (
-                  <Link className="CurrentPage" href={link.path}>
+                  <Link className="CurrentPageMobile" href={link.path}>
                     {link.name}
                   </Link>
                 ) : (
-                  <Link className="Link" href={link.path}>
+                  <Link className="LinkMobile" href={link.path}>
                     {link.name}
                   </Link>
                 )}
