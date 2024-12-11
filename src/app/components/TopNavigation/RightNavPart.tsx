@@ -8,7 +8,9 @@ import { ModeToggle } from "./mode-toggle";
 const RightNavPart: FC = () => {
   return (
     <Fragment>
-      <ModeToggle />
+      <div className="hidden lg:flex">
+        <ModeToggle />
+      </div>
     </Fragment>
   );
 };

@@ -20,8 +20,8 @@ const LeftNavPart: FC<{ pages: { name: string; path: string }[] }> = ({
             src={"/images/logo/cuativeLogo.png"}
             alt="Logo"
             priority={true}
-            width={500}
-            height={100}
+            width={600}
+            height={200}
           ></Image>
         </Link>
       </div>

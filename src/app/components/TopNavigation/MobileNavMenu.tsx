@@ -9,6 +9,9 @@ import MobileMenuIcon from "../svg/MobileMenuIcon";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+// Import custom components
+import { ModeToggle } from "./mode-toggle";
+
 const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
   pages,
 }) => {
@@ -41,6 +44,9 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
                 )}
               </div>
             ))}
+            <div className="flex justify-center">
+              <ModeToggle />
+            </div>
           </div>
         </SheetContent>
       </Sheet>
