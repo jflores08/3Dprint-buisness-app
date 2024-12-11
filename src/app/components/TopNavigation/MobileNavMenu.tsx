@@ -22,7 +22,8 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
     <Fragment>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant={"outline"}>
+          {/* SheetTrigger set to custom outline button and MobileMenuIcon centered vertically */}
+          <Button variant={"outline"} className="flex items-center">
             <MobileMenuIcon />
           </Button>
         </SheetTrigger>
