@@ -1,0 +1,20 @@
+{
+  "NarvbarLinks":{
+    "home": "HomePage",
+    "homeTitle": "Página de Principal",
+    "about": "Sobre",
+    "aboutTitle": "Página de Sobre",
+    "profile": "Perfil",
+    "profileTitle": "Página de Perfil"
+  },  
+  "HomePage": {
+      "title": "Hola mundo!",
+      "about": "Ir a la página Sobre Nosotros"
+    },
+    "AboutPage": {
+      "title": "Sobre"
+    },
+    "ProfilePage": {
+      "title": "Perfil"
+    }
+  }
