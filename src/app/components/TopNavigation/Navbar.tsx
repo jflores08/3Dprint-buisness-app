@@ -5,15 +5,25 @@ import { FC } from "react";
 import { LeftNavPart } from "./LeftNavPart";
 import { RightNavPart } from "./RightNavPart";
 import { MobileNavMenu } from "./MobileNavMenu";
+import { useTranslations } from "next-intl";
 
-const Navbar: FC<{ pages: { name: string; path: string }[] }> = ({ pages }) => {
+const Navbar: FC<{ locale: string }> = ({ locale }) => {
+  const t = useTranslations("NarvbarLinks");
+
+  // Define pages for to display in navigation bar
+  const pages = [
+    { name: t("home"), path: `/${locale}/`, external: false },
+    { name: t("about"), path: `/${locale}/about`, external: false },
+    { name: t("profile"), path: `/${locale}/profile`, external: false },
+  ];
+
   // start of html
   return (
     <header>
       {/* Navbar Flex conatainer */}
       <nav className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         {/* Left side of desktop Nav bar */}
-        <LeftNavPart pages={pages} />
+        <LeftNavPart locale={locale} pages={pages} />
 
         {/* Right side of desktop Nav bar */}
         <RightNavPart />

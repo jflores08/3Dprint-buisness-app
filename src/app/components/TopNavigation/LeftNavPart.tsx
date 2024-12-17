@@ -5,9 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-const LeftNavPart: FC<{ pages: { name: string; path: string }[] }> = ({
-  pages,
-}) => {
+const LeftNavPart: FC<{
+  locale: string;
+  pages: { name: string; path: string; external: boolean }[];
+}> = ({ locale, pages }) => {
   /* create pathname variable with current url value using usePathname Hook */
   const pathname = usePathname();
 
