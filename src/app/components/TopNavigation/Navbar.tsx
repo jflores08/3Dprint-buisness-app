@@ -14,7 +14,7 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
   const pages = [
     { name: t("home"), path: `/${locale}/`, external: false },
     { name: t("about"), path: `/${locale}/about`, external: false },
-    { name: t("profile"), path: `/${locale}/profile`, external: false },
+    { name: t("profile"), path: `/${locale}/about/profile`, external: false },
   ];
 
   // start of html
@@ -23,10 +23,10 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
       {/* Navbar Flex conatainer */}
       <nav className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         {/* Left side of desktop Nav bar */}
-        <LeftNavPart locale={locale} pages={pages} />
+        <LeftNavPart pages={pages} />
 
         {/* Right side of desktop Nav bar */}
-        <RightNavPart />
+        <RightNavPart locale={locale} />
 
         {/* Mobile Nav bar hidden on large screens */}
         <div className="sm:block lg:hidden">
