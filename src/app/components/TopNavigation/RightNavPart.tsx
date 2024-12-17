@@ -12,6 +12,10 @@ const RightNavPart: FC = () => {
       <div className="hidden lg:flex">
         <ModeToggle />
       </div>
+      <select>
+        <option value={"en"}>English</option>
+        <option value={"es"}>Espanôl</option>
+      </select>
     </Fragment>
   );
 };
