@@ -2,8 +2,35 @@
 // import Link from "next/link";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
+// Function for MetaData tag
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  // Access the translations for the Navbar
+  const t = await getTranslations("NavbarLinks");
+
+  return {
+    title: t("homeTitle"),
+  };
+}
+
+// Function for HomePage
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  // Enable static rendering
+  setRequestLocale(locale);
+
   const t = useTranslations("HomePage");
   return (
     <div>

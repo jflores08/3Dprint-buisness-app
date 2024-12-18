@@ -8,7 +8,7 @@ import { MobileNavMenu } from "./MobileNavMenu";
 import { useTranslations } from "next-intl";
 
 const Navbar: FC<{ locale: string }> = ({ locale }) => {
-  const t = useTranslations("NarvbarLinks");
+  const t = useTranslations("NavbarLinks");
 
   // Define pages for to display in navigation bar
   const pages = [
