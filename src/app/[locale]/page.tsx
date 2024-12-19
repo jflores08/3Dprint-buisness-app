@@ -1,5 +1,4 @@
 // Import Nextjs components
-// import Link from "next/link";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -31,11 +30,10 @@ export default function Home({
   // Enable static rendering
   setRequestLocale(locale);
 
-  const t = useTranslations("HomePage");
+  const t = useTranslations("HomePage.HeaderSection");
   return (
     <div>
       {/* <ModeToggle /> */}
-      <h1>Hello From </h1>
       <h1>{t("title")}</h1>
       <h2>This is an H2</h2>
       <h3>This is an H3</h3>

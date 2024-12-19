@@ -8,13 +8,28 @@
     "profileTitle": "Página de Perfil"
   },  
   "HomePage": {
-      "title": "Hola mundo!",
+    "HeaderSection":{
+      "title": "Página de Principal"
+     },
       "about": "Ir a la página Sobre Nosotros"
     },
     "AboutPage": {
+      "HeaderSection":{
       "title": "Sobre"
+      },
+      "FAQSection": {
+        "question1": "What Programing languages do you know?",
+        "answer1": "Typescript, Javascript, CSS, Python",
+        "question2": "How many years experience do you have?",
+        "answer2": "5 years Professional experience",
+        "question3": "How much time do you need for notice?",
+        "answer3": "I can start next week"
+      }
     },
     "ProfilePage": {
+      "HeaderSection":{
       "title": "Perfil"
+      }
     }
+   
   }

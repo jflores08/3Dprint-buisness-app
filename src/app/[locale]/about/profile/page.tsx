@@ -5,8 +5,6 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-
-
 // Function for MetaData tag
 export async function generateMetadata({
   params: { locale },
@@ -24,11 +22,9 @@ export async function generateMetadata({
   };
 }
 
-
-
-// Function for ProfilePage 
+// Function for ProfilePage
 export default function ProfilePage() {
-  const t = useTranslations("ProfilePage");
+  const t = useTranslations("ProfilePage.HeaderSection");
   return (
     <div>
       <h1>{t("title")}</h1>
