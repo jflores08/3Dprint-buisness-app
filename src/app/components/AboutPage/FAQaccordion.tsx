@@ -5,6 +5,7 @@ import { Fragment } from "react";
 
 // Import next componets
 import { useTranslations } from "next-intl";
+import { AccordionDemo } from "@/components/ui/accordion";
 
 // const FAQaccordion: FC<{
 //   faqs: { question: string; answer: string }[];
@@ -25,9 +26,11 @@ const FAQaccordion = () => {
       <h3>FAQs</h3>
       <div>
         {faqs.map((question, index) => (
-          <div key={index}>
-            <h4>{question.question}</h4>
-            <h5>{question.answer}</h5>
+          <div key={index} className="">
+            <AccordionDemo
+              question={question.question}
+              answer={question.answer}
+            />
           </div>
         ))}
       </div>

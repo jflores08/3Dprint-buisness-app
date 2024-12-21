@@ -14,7 +14,7 @@ pnpm dev
 bun dev
 ```
 ## Install Tailwind fluid for Responsive resizing
-npm install -D fluid-tailwind
+<!-- npm install -D fluid-tailwind -->
 
 ## Install hero Icons
 "npm install @heroicons/react"
