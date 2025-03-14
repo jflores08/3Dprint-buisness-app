@@ -23,6 +23,11 @@ bun dev
 "npm install lucide-react"
 
 ## Install shadcn Components
+npm install @radix-ui/react-accordion
+npx shadcn@latest add carousel
+npx shadcn@latest add card
+
+## Install shadcn Components
 "npx shadcn@latest init"
 "npx shadcn-ui@latest add dropdown-menu"
 "npx shadcn@latest add button"

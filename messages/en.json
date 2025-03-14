@@ -1,10 +1,13 @@
 {
   "NavbarLinks":{
     "home": "Home",
+    "homeLink": "/",
     "homeTitle": "Home page",
     "about": "About",
+    "aboutLink": "about",
     "aboutTitle": "About page",
     "profile": "Profile",
+    "profileLink": "about/profile",
     "profileTitle": "Profile page"
   },
   "HomePage": {
