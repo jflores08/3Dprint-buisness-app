@@ -4,6 +4,9 @@ import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
+// Import Local components
+import { ItemCardTemplate } from "../components/ProductsPage/ItemCardTemplate";
+
 // Function for MetaData tag
 export async function generateMetadata({
   params: { locale },
@@ -43,6 +46,8 @@ export default function Home({
         This is a Link component
       </Link>
       {/* <Link href={"/about"}>{t("about")}</Link> */}
+
+      <ItemCardTemplate model="iPhone" />
     </div>
   );
 }

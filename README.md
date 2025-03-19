@@ -22,10 +22,8 @@ bun dev
 ## Install lucide React
 "npm install lucide-react"
 
-## Install shadcn Components
+## Install radix Components
 npm install @radix-ui/react-accordion
-npx shadcn@latest add carousel
-npx shadcn@latest add card
 
 ## Install shadcn Components
 "npx shadcn@latest init"
@@ -33,6 +31,9 @@ npx shadcn@latest add card
 "npx shadcn@latest add button"
 "npx shadcn@latest add sheet"
 "npx shadcn@latest add accordion"
+npx shadcn@latest add carousel
+npx shadcn@latest add card
+
 
 ## Install Next Intl
 "npm install next-intl"

@@ -14,7 +14,11 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
   const pages = [
     { name: t("home"), path: `/${locale}/`, external: false },
     { name: t("about"), path: `/${locale}/${t("aboutLink")}`, external: false },
-    { name: t("profile"), path: `/${locale}/${t("profileLink")}`, external: false },
+    {
+      name: t("products"),
+      path: `/${locale}/${t("productsLink")}`,
+      external: false,
+    },
   ];
 
   // start of html
