@@ -6,6 +6,7 @@ import { getTranslations } from "next-intl/server";
 
 // Import Local components
 import { ItemCardTemplate } from "../components/ProductsPage/ItemCardTemplate";
+import HeroSection from "../components/HomePage/HeroSection";
 
 // Function for MetaData tag
 export async function generateMetadata({
@@ -38,10 +39,8 @@ export default function Home({
     <div>
       {/* <ModeToggle /> */}
       <h1>{t("title")}</h1>
-      <h2>This is an H2</h2>
-      <h3>This is an H3</h3>
-      <h4>This is an H4</h4>
-      <h5>This is an H5</h5>
+      <HeroSection />
+      
       <Link className="Link" href={"/"}>
         This is a Link component
       </Link>

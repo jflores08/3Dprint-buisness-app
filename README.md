@@ -33,6 +33,8 @@ npm install @radix-ui/react-accordion
 "npx shadcn@latest add accordion"
 npx shadcn@latest add carousel
 npx shadcn@latest add card
+npx shadcn@latest add avatar
+
 
 
 ## Install Next Intl
