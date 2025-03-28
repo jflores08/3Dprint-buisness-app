@@ -1,7 +1,5 @@
 // Import next.js components
 import Image from "next/image";
-import Link from "next/link";
-
 
 // Start of tsx
 export default async function HeroSection() {

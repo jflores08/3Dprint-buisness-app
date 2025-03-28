@@ -46,7 +46,7 @@ export default function Home({
       </Link>
       {/* <Link href={"/about"}>{t("about")}</Link> */}
 
-      <ItemCardTemplate model="iPhone" />
+      <ItemCardTemplate model="eagle.glft.SVG" />
     </div>
   );
 }

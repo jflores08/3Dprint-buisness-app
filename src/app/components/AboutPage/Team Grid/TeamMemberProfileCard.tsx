@@ -5,13 +5,7 @@ import { FC } from "react";
 // Import shadcn components
 // import { Avatar } from "@radix-ui/react-avatar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  CardFooter,
-  CardTitle,
-} from "@/components/ui/card";
+
 
 const TeamMemberProfileCard: FC<{
   name: string;

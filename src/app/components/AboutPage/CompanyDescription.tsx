@@ -5,17 +5,9 @@ import { Fragment } from "react";
 
 // Import next componets
 import { useTranslations } from "next-intl";
-import { AccordionDemo } from "@/components/ui/accordion";
 
 const CompanyDescription = () => {
   const t = useTranslations("AboutPage.HeaderSection");
-
-  // Define FAQs for to display in FAQ accordion
-  const faqs = [
-    { question: t("question1"), answer: t("answer1") },
-    { question: t("question2"), answer: t("answer2") },
-    { question: t("question3"), answer: t("answer3") },
-  ];
 
   return (
     <Fragment>

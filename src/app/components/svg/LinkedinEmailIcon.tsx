@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-const SvgComponent: FC = (props) => {
+const SvgComponent: FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

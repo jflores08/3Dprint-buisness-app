@@ -38,13 +38,15 @@ const TeamProfileGrid: FC<{
       >
         {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
         {founderData.map((teamMember) => (
-          <div className="lg:col-span-4 xs:col-span-12 flex justify-center">
+          <div
+            className="lg:col-span-4 xs:col-span-12 flex justify-center"
+            key={teamMember.name}
+          >
             <FounderProfileCard
               avatar={teamMember.avatar}
               name={teamMember.name}
               jobTitle={teamMember.job_title}
               href={teamMember.linkedInLink}
-              key={teamMember.name}
             />
           </div>
         ))}
@@ -53,12 +55,14 @@ const TeamProfileGrid: FC<{
       {/* Grid of TeamMember to show Employees */}
       <div id="teamMember-Grid" className="grid grid-cols-12  gap-4">
         {employeeData.map((teamMember) => (
-          <div className="lg:col-span-3 xs:col-span-12 flex justify-center">
+          <div
+            className="lg:col-span-3 xs:col-span-12 flex justify-center"
+            key={teamMember.name}
+          >
             <TeamMemberProfileCard
               avatar={teamMember.avatar}
               name={teamMember.name}
               jobTitle={teamMember.job_title}
-              key={teamMember.name}
             />
           </div>
         ))}
