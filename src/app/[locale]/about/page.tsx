@@ -2,11 +2,11 @@
 import { useTranslations } from "next-intl";
 
 // Import local components
-import { Link } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FAQaccordion } from "@/app/components/AboutPage/FAQaccordion";
 import { TeamProfileGrid } from "@/app/components/AboutPage/Team Grid/TeamProfileGrid";
 import { ourTeamData } from "@/app/components/data/ourTeamData";
+import { CompanyDescription } from "@/app/components/AboutPage/CompanyDescription";
 // Function for MetaData tag
 export async function generateMetadata({
   params: { locale },
@@ -30,10 +30,7 @@ export default function AboutPage() {
 
   return (
     <div>
-      <h1>{t("title")}</h1>
-      <Link className="Link" href={"/"}>
-        This is a Link component
-      </Link>
+      <CompanyDescription />
       <TeamProfileGrid teamData={ourTeamData} />
       <FAQaccordion />
     </div>

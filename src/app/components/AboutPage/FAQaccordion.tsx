@@ -1,7 +1,6 @@
 "use client";
 
 // Import react components
-import { Fragment } from "react";
 
 // Import next componets
 import { useTranslations } from "next-intl";
@@ -22,7 +21,7 @@ const FAQaccordion = () => {
   ];
 
   return (
-    <Fragment>
+    <div id="faqAccordion" className="px-10">
       <h3>FAQs</h3>
       <div>
         {faqs.map((question, index) => (
@@ -34,7 +33,7 @@ const FAQaccordion = () => {
           </div>
         ))}
       </div>
-    </Fragment>
+    </div>
   );
 };
 

@@ -8,7 +8,7 @@ const AccordionDemo: FC<{ question: string; answer: string }> = ({
   answer,
 }) => (
   <Accordion.Root
-    className=" border-4 border-primary rounded-md lg:w-[500px] sm:w-200px"
+    className=" border-4 border-primary rounded-md lg:w-500px sm:w-200px"
     type="single"
     collapsible
   >
