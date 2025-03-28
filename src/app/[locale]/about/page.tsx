@@ -5,7 +5,8 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FAQaccordion } from "@/app/components/AboutPage/FAQaccordion";
-
+import { TeamProfileGrid } from "@/app/components/AboutPage/Team Grid/TeamProfileGrid";
+import { ourTeamData } from "@/app/components/data/ourTeamData";
 // Function for MetaData tag
 export async function generateMetadata({
   params: { locale },
@@ -33,6 +34,7 @@ export default function AboutPage() {
       <Link className="Link" href={"/"}>
         This is a Link component
       </Link>
+      <TeamProfileGrid teamData={ourTeamData} />
       <FAQaccordion />
     </div>
   );
