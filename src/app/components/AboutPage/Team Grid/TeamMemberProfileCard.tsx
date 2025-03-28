@@ -19,7 +19,10 @@ const TeamMemberProfileCard: FC<{
   jobTitle: string;
 }> = ({ name, avatar, jobTitle }) => {
   return (
-    <div id="ProfileCard" className="px-10 w-80 flex flex-col items-center">
+    <div
+      id="ProfileCard"
+      className="px-10 flex flex-col items-center justify-center"
+    >
       <Avatar className="w-15 h-15">
         <AvatarImage
           src={`/images/teamMember_pics/${avatar}`}
@@ -28,7 +31,7 @@ const TeamMemberProfileCard: FC<{
         <AvatarFallback>teamMemner Pic</AvatarFallback>
       </Avatar>
       <h2>{name}</h2>
-      <h3>{jobTitle}</h3>
+      <h3 className="flex justify-end">{jobTitle}</h3>
     </div>
   );
 };
