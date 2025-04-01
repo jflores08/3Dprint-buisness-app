@@ -45,6 +45,9 @@
     "ProductsPage": {
       "HeaderSection":{
       "title": "Productos"
+      },
+      "ProductGridSection":{
+      "title": "Todos los productos"
       }
     }
    

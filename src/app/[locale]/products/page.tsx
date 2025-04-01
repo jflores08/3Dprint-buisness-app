@@ -2,8 +2,11 @@
 import { useTranslations } from "next-intl";
 
 // Import local components
-import { Link } from "@/i18n/routing";
+import { AllProductsGallery } from "@/app/components/ProductsPage/productGrid";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+
+// Import local data
+import { ourProductData } from "@/app/components/data/productData";
 
 // Function for MetaData tag
 export async function generateMetadata({
@@ -24,14 +27,13 @@ export async function generateMetadata({
 
 // Function for ProductsPage
 export default function ProductsPage() {
+  // Access the translations for the ProductsPage
   const t = useTranslations("ProductsPage.HeaderSection");
 
   return (
     <div>
       <h1>{t("title")}</h1>
-      <Link className="Link" href={"/"}>
-        This is a Link component
-      </Link>
+      <AllProductsGallery productData={ourProductData} />
     </div>
   );
 }

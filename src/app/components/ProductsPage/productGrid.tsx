@@ -4,18 +4,11 @@
 import { FC } from "react";
 import { useTranslations } from "next-intl";
 
-// Import Nextjs components
-import { Link } from "@/i18n/routing";
-
-// Import sanity components
-import { ArrowRight } from "lucide-react";
-
 // Import local components
 import { ItemCardTemplate } from "../ProductsPage/ItemCardTemplate";
+// import { Grid, Stack, Box } from "@mui/material";
 
-
-
-const SubscriptionGallery: FC<{
+const AllProductsGallery: FC<{
   productData: {
     subscriptions: {
       subscriptionName: string;
@@ -31,23 +24,19 @@ const SubscriptionGallery: FC<{
     }[];
   };
 }> = ({ productData }) => {
-  // Access the translations for the Navbar
-  const t = useTranslations("HomePage.SubscriptionGallery");
+  // Access the translations for the ProductsPage
+  const t = useTranslations("ProductsPage.ProductGridSection");
 
   const subscriptionData = productData.subscriptions;
-  // const printItemData = productData.printItems;
+  //   const printItemData = productData.printItems;
 
   return (
     <div>
       {/* Header for Product Subscription*/}
       <div className="flex flex-row justify-between items-center">
-        <h1>{t("title")}</h1>
+        <h2>{t("title")}</h2>
 
         {/* Link to Products page*/}
-        <Link href={`/${t("productsLink")}`} className="Link flex flex-row">
-          {t("productsPageLink")} {""}
-          <ArrowRight />
-        </Link>
       </div>
 
       {/* Grid of Subscriptions */}
@@ -73,4 +62,4 @@ const SubscriptionGallery: FC<{
     </div>
   );
 };
-export { SubscriptionGallery };
+export { AllProductsGallery };
