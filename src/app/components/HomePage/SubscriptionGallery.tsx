@@ -51,47 +51,25 @@ const SubscriptionGallery: FC<{
         </Link>
       </div>
 
-      {/* Grid of Subscriptions Section */}
+      {/* Grid of Subscriptions */}
       <div
-        id="SubscriptionPackagesGrid"
-        className="flex flex-col  mb-10 justify-center"
+        id="subscription-Grid"
+        className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
       >
-        {/* Grid of Subscriptions */}
-        <div
-          id="subscription-Grid"
-          className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
-        >
-          {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
-          {subscriptionData.map((subscription) => (
-            <div
-              className="lg:col-span-4 xs:col-span-12 flex justify-center"
-              key={subscriptionData.indexOf(subscription)}
-            >
-              <ItemCardTemplate
-                itemName={subscription.subscriptionName}
-                itemImage={subscription.subscriptionImage}
-                itemDescription={subscription.subscriptionDescription}
-                itemPrice={subscription.subscriptionPrice}
-              />
-            </div>
-          ))}
-        </div>
-
-        {/* Grid of TeamMember to show Employees */}
-        {/* <div id="teamMember-Grid" className="grid grid-cols-12  gap-4">
-        {employeeData.map((teamMember) => (
+        {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
+        {subscriptionData.map((subscription) => (
           <div
-            className="lg:col-span-3 xs:col-span-12 flex justify-center"
-            key={teamMember.name}
+            className="lg:col-span-4 xs:col-span-12 flex justify-center"
+            key={subscriptionData.indexOf(subscription)}
           >
-            <TeamMemberProfileCard
-              avatar={teamMember.avatar}
-              name={teamMember.name}
-              jobTitle={teamMember.job_title}
+            <ItemCardTemplate
+              itemName={subscription.subscriptionName}
+              itemImage={subscription.subscriptionImage}
+              itemDescription={subscription.subscriptionDescription}
+              itemPrice={subscription.subscriptionPrice}
             />
           </div>
         ))}
-      </div> */}
       </div>
     </div>
   );
