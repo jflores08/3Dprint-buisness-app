@@ -8,7 +8,10 @@
     "aboutTitle": "Página de Sobre",
     "profile": "Perfil",
     "profileLink": "about/profile",
-    "profileTitle": "Página de Perfil"
+    "profileTitle": "Página de Perfil",
+    "products": "Productos",
+    "productsLink": "products",
+    "productsTitle": "Products page"
   },  
   "HomePage": {
     "HeaderSection":{
@@ -32,6 +35,11 @@
     "ProfilePage": {
       "HeaderSection":{
       "title": "Perfil"
+      }
+    },
+    "ProductsPage": {
+      "HeaderSection":{
+      "title": "Productos"
       }
     }
    

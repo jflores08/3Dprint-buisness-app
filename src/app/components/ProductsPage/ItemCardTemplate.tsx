@@ -9,23 +9,27 @@ import Image from "next/image";
 // Import shadcn components
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
-const ItemCardTemplate: FC<{ model: string }> = ({ model }) => {
+const ItemCardTemplate: FC<{
+  itemName: string;
+  itemImage: string;
+  itemDescription: string;
+  itemPrice: number;
+}> = ({ itemName, itemImage, itemDescription, itemPrice }) => {
   return (
     <Card className=" max-w-md border border-black">
-      <CardHeader>Phone Stand</CardHeader>
+      <CardHeader>{itemName}</CardHeader>
       <CardContent className="px-0 flex flex-row">
         <Image
-          width={40}
-          height={40}
+          width={60}
+          height={60}
           alt="Model Photo"
           className="m-4 "
-          src={model}
+          src={`/images/teamMember_pics/${itemImage}`}
         />
         <div className="m-3 flex flex-col content-center  ">
-          <h2 className="mb-5">Iphone Stand</h2>
-          <h6>
-            this stand can be used as a charging dock or a regular phone stand.
-          </h6>
+          <h3 className="mb-5">{itemName}</h3>
+          <h4>{`$${itemPrice}`}</h4>
+          <h6>{itemDescription}</h6>
         </div>
       </CardContent>
     </Card>

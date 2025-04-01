@@ -7,6 +7,10 @@ import { getTranslations } from "next-intl/server";
 // Import Local components
 import { ItemCardTemplate } from "../components/ProductsPage/ItemCardTemplate";
 import HeroSection from "../components/HomePage/HeroSection";
+import { SubscriptionGallery } from "../components/HomePage/SubscriptionGallery";
+
+// Import local data
+import { ourProductData } from "../components/data/productData";
 
 // Function for MetaData tag
 export async function generateMetadata({
@@ -40,13 +44,13 @@ export default function Home({
       {/* <ModeToggle /> */}
       <h1>{t("title")}</h1>
       <HeroSection />
-      
+
       <Link className="Link" href={"/"}>
         This is a Link component
       </Link>
       {/* <Link href={"/about"}>{t("about")}</Link> */}
-
-      <ItemCardTemplate model="eagle.glft.SVG" />
+      <SubscriptionGallery productData={ourProductData} locale={locale}/>
+      {/* <ItemCardTemplate model="eagle.glft.SVG" /> */}
     </div>
   );
 }
