@@ -17,6 +17,11 @@
     "HeaderSection":{
       "title": "Modelado 3D para Fabricación y Aficiones"
      },
+     "SubscriptionGallery":{
+      "title": "Suscripciones",
+      "productsPageLink": "ver todos los productos",
+      "productsLink": "products"
+    },
       "about": "Ir a la página Sobre Nosotros"
     },
     "AboutPage": {

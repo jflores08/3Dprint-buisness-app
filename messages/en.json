@@ -10,12 +10,17 @@
     "profileLink": "about/profile",
     "profileTitle": "Profile page",
     "products": "Products",
-    "productsLink": "/products",
+    "productsLink": "products",
     "productsTitle": "Products page"
   },
   "HomePage": {
     "HeaderSection":{
       "title": "3D Modeling for Manufacturing and Hobbies"
+    },
+    "SubscriptionGallery":{
+      "title": "Subscriptions",
+      "productsPageLink": "see all products",
+      "productsLink": "products"
     },
       "about": "Go to the about page"
     },

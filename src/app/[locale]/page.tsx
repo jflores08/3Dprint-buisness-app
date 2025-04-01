@@ -1,11 +1,9 @@
 // Import Nextjs components
-import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 // Import Local components
-import { ItemCardTemplate } from "../components/ProductsPage/ItemCardTemplate";
 import HeroSection from "../components/HomePage/HeroSection";
 import { SubscriptionGallery } from "../components/HomePage/SubscriptionGallery";
 
@@ -45,11 +43,8 @@ export default function Home({
       <h1>{t("title")}</h1>
       <HeroSection />
 
-      <Link className="Link" href={"/"}>
-        This is a Link component
-      </Link>
       {/* <Link href={"/about"}>{t("about")}</Link> */}
-      <SubscriptionGallery productData={ourProductData} locale={locale}/>
+      <SubscriptionGallery productData={ourProductData} />
       {/* <ItemCardTemplate model="eagle.glft.SVG" /> */}
     </div>
   );

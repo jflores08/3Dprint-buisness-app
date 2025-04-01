@@ -31,30 +31,30 @@ const SubscriptionGallery: FC<{
       itemPrice: number;
     }[];
   };
-  locale: string;
-}> = ({ productData, locale }) => {
+}> = ({ productData }) => {
   // Access the translations for the Navbar
-  const t = useTranslations("NavbarLinks");
+  const t = useTranslations("HomePage.SubscriptionGallery");
 
   const subscriptionData = productData.subscriptions;
-  const printItemData = productData.printItems;
+  // const printItemData = productData.printItems;
 
   return (
     <div>
       {/* Header for Product Subscription*/}
-      <div className="flex flex-row justify-between items-end">
-        <h1>Subscriptions</h1>
+      <div className="flex flex-row justify-between items-center">
+        <h1>{t("title")}</h1>
 
-        {/* Header for Product Subscription*/}
-        <Link href={`/${t("productsLink")}`} className="flex flex-row">
-          <h4>See all products</h4>
+        {/* Link to Products page*/}
+        <Link href={`/${t("productsLink")}`} className="Link flex flex-row">
+          {t("productsPageLink")} {""}
           <ArrowRight />
         </Link>
       </div>
 
+      {/* Grid of Subscriptions Section */}
       <div
         id="SubscriptionPackagesGrid"
-        className="flex flex-col mt-10 mb-10 justify-center"
+        className="flex flex-col  mb-10 justify-center"
       >
         {/* Grid of Subscriptions */}
         <div
@@ -96,4 +96,4 @@ const SubscriptionGallery: FC<{
     </div>
   );
 };
-export {SubscriptionGallery };
+export { SubscriptionGallery };

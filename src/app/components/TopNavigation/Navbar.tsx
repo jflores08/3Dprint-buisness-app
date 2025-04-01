@@ -13,7 +13,7 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
 
   // Define pages for to display in navigation bar
   const pages = [
-    { name: t("home"), path: `/${locale}/`, external: false },
+    { name: t("home"), path: `/${locale}`, external: false },
     { name: t("about"), path: `/${locale}/${t("aboutLink")}`, external: false },
     {
       name: t("products"),
