@@ -24,8 +24,8 @@ const FounderProfileCard: FC<{
         />
         <AvatarFallback>teamMemner Pic</AvatarFallback>
       </Avatar>
-      <h2>{name}</h2>
-      <h3>{jobTitle}</h3>
+      <h3>{name}</h3>
+      <h4>{jobTitle}</h4>
       <Link href={href}>
         <LinkedinEmailIcon />
       </Link>

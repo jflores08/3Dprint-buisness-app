@@ -28,7 +28,7 @@ const ourTeamData = {
     {
       name: "Susan Lynn",
       avatar: "IvanBleminse.jpeg",
-      job_title: "Account Manager",
+      job_title: "Product Manager",
     },
     {
       name: "Jon Flores",
