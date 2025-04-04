@@ -13,8 +13,6 @@ import { ArrowRight } from "lucide-react";
 // Import local components
 import { ItemCardTemplate } from "../ProductsPage/ItemCardTemplate";
 
-
-
 const SubscriptionGallery: FC<{
   productData: {
     subscriptions: {
@@ -35,7 +33,7 @@ const SubscriptionGallery: FC<{
   const t = useTranslations("HomePage.SubscriptionGallery");
 
   const subscriptionData = productData.subscriptions;
-  // const printItemData = productData.printItems;
+  
 
   return (
     <div>

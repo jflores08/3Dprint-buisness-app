@@ -28,36 +28,78 @@ const AllProductsGallery: FC<{
   const t = useTranslations("ProductsPage.ProductGridSection");
 
   const subscriptionData = productData.subscriptions;
-  //   const printItemData = productData.printItems;
+  const printItemData = productData.printItems;
 
   return (
-    <div>
+    <div id="ProductsGallerySection">
       {/* Header for Product Subscription*/}
-      <div className="flex flex-row justify-between items-center">
+      <div
+        id="ProductsGalleryHeader"
+        className="flex flex-row justify-between items-center"
+      >
         <h2>{t("title")}</h2>
-
-        {/* Link to Products page*/}
       </div>
 
-      {/* Grid of Subscriptions */}
+      {/* Section of All products */}
       <div
-        id="subscription-Grid"
-        className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
+        id="allProductsGallerySection"
+        className="flex flex-col mt-10 mb-10 justify-center"
       >
-        {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
-        {subscriptionData.map((subscription) => (
+        {/* Grid of Subscriptions */}
+        <div
+          id="subscriptionsGridSection"
+          className="flex flex-col mt-10 mb-10 justify-center"
+        >
+          <h3>{t("subscriptionsHeader")}</h3>
           <div
-            className="lg:col-span-4 xs:col-span-12 flex justify-center"
-            key={subscriptionData.indexOf(subscription)}
+            id="subscription-Grid"
+            className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
           >
-            <ItemCardTemplate
-              itemName={subscription.subscriptionName}
-              itemImage={subscription.subscriptionImage}
-              itemDescription={subscription.subscriptionDescription}
-              itemPrice={subscription.subscriptionPrice}
-            />
+            {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
+            {subscriptionData.map((subscription) => (
+              <div
+                id="subscriptonCardDiv"
+                className="lg:col-span-4 xs:col-span-12 flex justify-center"
+                key={subscriptionData.indexOf(subscription)}
+              >
+                <ItemCardTemplate
+                  itemName={subscription.subscriptionName}
+                  itemImage={subscription.subscriptionImage}
+                  itemDescription={subscription.subscriptionDescription}
+                  itemPrice={subscription.subscriptionPrice}
+                />
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        {/* Grid of PremadeItems */}
+        <div
+          id="subscriptionsGridSection"
+          className="flex flex-col mt-10 mb-10 justify-center"
+        >
+          <h3>{t("premadeItemsHeader")}</h3>
+          <div
+            id="premadeItems-Grid"
+            className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
+          >
+            {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
+            {printItemData.map((printItem) => (
+              <div
+                id="itemCardDiv"
+                className="lg:col-span-4 xs:col-span-12 flex justify-center"
+                key={printItemData.indexOf(printItem)}
+              >
+                <ItemCardTemplate
+                  itemName={printItem.itemName}
+                  itemImage={printItem.itemImage}
+                  itemDescription={printItem.itemDescription}
+                  itemPrice={printItem.itemPrice}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

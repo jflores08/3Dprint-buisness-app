@@ -7,7 +7,7 @@ import { FC } from "react";
 import Image from "next/image";
 
 // Import shadcn components
-import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ItemCardTemplate: FC<{
   itemName: string;
@@ -16,19 +16,21 @@ const ItemCardTemplate: FC<{
   itemPrice: number;
 }> = ({ itemName, itemImage, itemDescription, itemPrice }) => {
   return (
-    <Card className=" max-w-md border border-black">
-      <CardHeader>{itemName}</CardHeader>
-      <CardContent className="px-0 flex flex-row">
+    <Card
+      id="itemCardTemplate"
+      className=" max-w-72 min-w-72 border border-black content-center"
+    >
+      <CardContent className="flex flex-row justify-between">
         <Image
           width={60}
           height={60}
           alt="Model Photo"
-          className="m-4 "
-          src={`/images/teamMember_pics/${itemImage}`}
+          className="mt-6 mr-6 "
+          src={`/images/products/${itemImage}`}
         />
-        <div className="m-3 flex flex-col content-center  ">
+        <div className="mt-6 flex flex-col content-center  ">
           <h3 className="mb-5">{itemName}</h3>
-          <h4>{`$${itemPrice}`}</h4>
+          <h4>{`$${itemPrice}/month`}</h4>
           <h6>{itemDescription}</h6>
         </div>
       </CardContent>

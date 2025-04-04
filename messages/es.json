@@ -23,8 +23,8 @@
       "productsLink": "products"
     },
       "about": "Ir a la página Sobre Nosotros"
-    },
-    "AboutPage": {
+  },
+  "AboutPage": {
       "HeaderSection":{
       "title": "Sobre"
       },
@@ -36,19 +36,41 @@
         "question3": "How much time do you need for notice?",
         "answer3": "I can start next week"
       }
-    },
-    "ProfilePage": {
+  },
+  "ProfilePage": {
       "HeaderSection":{
       "title": "Perfil"
       }
-    },
-    "ProductsPage": {
+  },
+  "ProductsPage": {
       "HeaderSection":{
       "title": "Productos"
       },
       "ProductGridSection":{
-      "title": "Todos los productos"
+      "title": "Todos los productos",
+      "subscriptionsHeader": "Suscripciones",
+      "premadeItemsHeader": "Artículos Prefabricados"
       }
-    }
-   
+  },
+  "ProductOptionsInformation":{
+      "SubscriptionOption1":{
+        "option1SubscriptionImage": "IvanBleminse.jpeg",
+        "option1SubscriptionLength": "1 impresión al mes",
+        "option1SubscriptionPrice": 5,
+        "option1SubscriptionDescription": "1 impresión al mes"
+      },
+      "SubscriptionOption2":{
+        "option2SubscriptionImage": "IvanBleminse.jpeg",
+        "option2SubscriptionLength": "4 impresiones al mes",
+        "option2SubscriptionPrice": 15,
+        "option2SubscriptionDescription": "4 impresiones al mes"
+      },
+      "SubscriptionOption3":{
+        "option3SubscriptionImage": "IvanBleminse.jpeg",
+        "option3SubscriptionLength": "8 impresiones al mes",
+        "option3SubscriptionPrice": 30,
+        "option3SubscriptionDescription": "8 impresiones al mes"
+      }
   }
+   
+}

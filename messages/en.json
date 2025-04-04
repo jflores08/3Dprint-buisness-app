@@ -23,8 +23,8 @@
       "productsLink": "products"
     },
       "about": "Go to the about page"
-    },
-    "AboutPage": {
+  },
+  "AboutPage": {
       "HeaderSection":{
       "title": "About"
       },
@@ -36,19 +36,37 @@
         "question3": "How much time do you need for notice?",
         "answer3": "I can start next week"
       }
-    },
-    "ProfilePage": {
+  },
+  "ProfilePage": {
       "HeaderSection":{
       "title": "Profile"
       }
-    },
-    "ProductsPage": {
+  },
+  "ProductsPage": {
       "HeaderSection":{
       "title": "Products"
       },
       "ProductGridSection":{
-        "title": "All products"
+        "title": "All products",
+        "subscriptionsHeader": "Subscriptions",
+        "premadeItemsHeader": "Premade Items"
+      },
+      "ProductOptionsInformation":{
+        "SubscriptionOption1":{
+          "subscriptionLength": "1 print a month",
+          "subscriptionPrice": 5,
+          "subscriptionDescription": "One print a month"
+        },
+        "SubscriptionOption2":{
+          "subscriptionLength": "4 prints a month",
+          "subscriptionPrice": 15,
+          "subscriptionDescription": "4 prints a month"
+        },
+        "SubscriptionOption3":{
+          "subscriptionLength": "8 prints a month",
+          "subscriptionPrice": 30,
+          "subscriptionDescription": "8 prints a month"
+        }
       }
-    }
-   
   }
+}
