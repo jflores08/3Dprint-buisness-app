@@ -17,6 +17,10 @@
     "HeaderSection":{
       "title": "3D Modeling for Manufacturing and Hobbies"
     },
+    "HeroSection":{
+      "header": "Top 3D modeling for a top price!",
+      "description": "We manufacure only the highest quality printed products for you. We are the best so come and shop with us."
+     },
     "SubscriptionGallery":{
       "title": "Subscriptions",
       "productsPageLink": "see all products",

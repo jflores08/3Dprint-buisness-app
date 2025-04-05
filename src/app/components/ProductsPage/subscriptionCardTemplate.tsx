@@ -16,7 +16,7 @@ const SubscriptionCardTemplate: FC<{
   itemDescription: string;
   itemPrice: number;
 }> = ({ itemName, itemImage, itemDescription, itemPrice }) => {
-  // Access the translations for the ProductsPage
+  // Access the translations for the SubscriptionCardTemplate
   const t = useTranslations("ProductsPage.SubscriptionCardTemplate");
 
   return (

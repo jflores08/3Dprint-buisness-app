@@ -11,7 +11,7 @@ import { Link } from "@/i18n/routing";
 import { ArrowRight } from "lucide-react";
 
 // Import local components
-import { ItemCardTemplate } from "../ProductsPage/ItemCardTemplate";
+import { SubscriptionCardTemplate } from "../ProductsPage/subscriptionCardTemplate";
 
 const SubscriptionGallery: FC<{
   productData: {
@@ -33,7 +33,6 @@ const SubscriptionGallery: FC<{
   const t = useTranslations("HomePage.SubscriptionGallery");
 
   const subscriptionData = productData.subscriptions;
-  
 
   return (
     <div>
@@ -59,7 +58,7 @@ const SubscriptionGallery: FC<{
             className="lg:col-span-4 xs:col-span-12 flex justify-center"
             key={subscriptionData.indexOf(subscription)}
           >
-            <ItemCardTemplate
+            <SubscriptionCardTemplate
               itemName={subscription.subscriptionName}
               itemImage={subscription.subscriptionImage}
               itemDescription={subscription.subscriptionDescription}

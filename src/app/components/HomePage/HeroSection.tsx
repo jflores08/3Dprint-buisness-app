@@ -1,8 +1,11 @@
 // Import next.js components
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 // Start of tsx
 export default async function HeroSection() {
+  // Access the translations for the HomePage
+  const t = useTranslations("HomePage.HeroSection");
   //   const data = await getData();
   return (
     <section className="mx-auto max-w-2xl px-4 sm:pb-6 lg:max-w-7xl lg:px-8">
@@ -17,12 +20,11 @@ export default async function HeroSection() {
           className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48"
         >
           {/* Hero section Header */}
-          <h1>Top 3D modeling for a top price!</h1>
+          <h1>{t("header")}</h1>
 
           {/* Hero section page script */}
           <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">
-            We manufacure only the highest quality printed products for you. We
-            are the best so come and shop with us.
+          {t("description")}
           </p>
         </div>
 

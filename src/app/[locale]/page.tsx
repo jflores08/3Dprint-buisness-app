@@ -42,6 +42,7 @@ export default function Home({
   // Enable static rendering
   setRequestLocale(locale);
 
+  // Access the translations for the HomePage
   const t = useTranslations("HomePage.HeaderSection");
   return (
     <div>
