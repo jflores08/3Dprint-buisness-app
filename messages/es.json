@@ -30,7 +30,8 @@
   },
   "AboutPage": {
       "HeaderSection":{
-      "title": "Sobre"
+      "title": "Sobre",
+      "companyDescription": "Somos una pequeña empresa especializada en impresiones 3D de alta resolución. Empezamos 2 amigos de la escuela secundaria con una pasión por el modelado 3D. Nuestra empresa está especializada en prototipos de alta resolución y modelos personalizados."
       },
       "FAQSection": {
         "question1": "What Programing languages do you know?",
