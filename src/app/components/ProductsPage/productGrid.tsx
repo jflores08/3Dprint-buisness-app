@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 
 // Import local components
 import { ItemCardTemplate } from "../ProductsPage/ItemCardTemplate";
+import { SubscriptionCardTemplate } from "./subscriptionCardTemplate";
 // import { Grid, Stack, Box } from "@mui/material";
 
 const AllProductsGallery: FC<{
@@ -62,7 +63,7 @@ const AllProductsGallery: FC<{
                 className="lg:col-span-4 xs:col-span-12 flex justify-center"
                 key={subscriptionData.indexOf(subscription)}
               >
-                <ItemCardTemplate
+                <SubscriptionCardTemplate
                   itemName={subscription.subscriptionName}
                   itemImage={subscription.subscriptionImage}
                   itemDescription={subscription.subscriptionDescription}

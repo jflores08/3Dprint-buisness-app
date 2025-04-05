@@ -50,7 +50,12 @@
       "title": "Todos los productos",
       "subscriptionsHeader": "Suscripciones",
       "premadeItemsHeader": "Artículos Prefabricados"
-      }
+      },
+      "SubscriptionCardTemplate":{
+        "title": "nivel",
+        "subscriptionLength": "mes",
+        "description": "impresiones al mes"
+        }
   },
   "ProductOptionsInformation":{
       "SubscriptionOption1":{

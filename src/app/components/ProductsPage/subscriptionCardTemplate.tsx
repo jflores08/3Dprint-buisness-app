@@ -2,6 +2,7 @@
 
 // Import react components
 import { FC } from "react";
+import { useTranslations } from "next-intl";
 
 // Import next.js components
 import Image from "next/image";
@@ -9,12 +10,15 @@ import Image from "next/image";
 // Import shadcn components
 import { Card, CardContent } from "@/components/ui/card";
 
-const ItemCardTemplate: FC<{
+const SubscriptionCardTemplate: FC<{
   itemName: string;
   itemImage: string;
   itemDescription: string;
   itemPrice: number;
 }> = ({ itemName, itemImage, itemDescription, itemPrice }) => {
+  // Access the translations for the ProductsPage
+  const t = useTranslations("ProductsPage.SubscriptionCardTemplate");
+
   return (
     <Card
       id="itemCardTemplate"
@@ -29,13 +33,13 @@ const ItemCardTemplate: FC<{
           src={`/images/products/${itemImage}`}
         />
         <div className="mt-6 flex flex-col content-center  ">
-          <h3 className="mb-5">{itemName}</h3>
-          <h4>{`$${itemPrice}`}</h4>
-          <h6>{itemDescription}</h6>
+          <h3 className="mb-2">{itemName}</h3>
+          <h4>{`$${itemPrice}/${t("subscriptionLength")}`}</h4>
+          <h6>{`${itemDescription} ${t("description")}`}</h6>
         </div>
       </CardContent>
     </Card>
   );
 };
 
-export { ItemCardTemplate };
+export { SubscriptionCardTemplate };

@@ -3,19 +3,19 @@ const ourProductData = {
     {
       subscriptionName: "Intro",
       subscriptionImage: "IvanBleminse.jpeg",
-      subscriptionDescription: "1 print a month",
+      subscriptionDescription: "1 ",
       subscriptionPrice: 5.0,
     },
     {
       subscriptionName: "Hobbist",
       subscriptionImage: "IvanBleminse.jpeg",
-      subscriptionDescription: "4 prints a month",
+      subscriptionDescription: "4 ",
       subscriptionPrice: 15.0,
     },
     {
       subscriptionName: "Pro",
       subscriptionImage: "IvanBleminse.jpeg",
-      subscriptionDescription: "8 prints a month",
+      subscriptionDescription: "8 ",
       subscriptionPrice: 30.0,
     },
   ],

@@ -51,6 +51,13 @@
         "subscriptionsHeader": "Subscriptions",
         "premadeItemsHeader": "Premade Items"
       },
+      
+      "SubscriptionCardTemplate":{
+        "title": "level",
+        "subscriptionLength": "month",
+        "description": "prints per month"
+        }
+      },
       "ProductOptionsInformation":{
         "SubscriptionOption1":{
           "subscriptionLength": "1 print a month",
@@ -68,5 +75,4 @@
           "subscriptionDescription": "8 prints a month"
         }
       }
-  }
 }
