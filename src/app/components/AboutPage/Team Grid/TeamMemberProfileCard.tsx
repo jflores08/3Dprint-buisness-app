@@ -6,7 +6,6 @@ import { FC } from "react";
 // import { Avatar } from "@radix-ui/react-avatar";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-
 const TeamMemberProfileCard: FC<{
   name: string;
   avatar: string;
@@ -15,7 +14,7 @@ const TeamMemberProfileCard: FC<{
   return (
     <div
       id="ProfileCard"
-      className="px-10 flex flex-col items-center justify-center"
+      className="px-5 flex flex-col items-center justify-center"
     >
       <Avatar className="w-15 h-15">
         <AvatarImage
@@ -24,8 +23,8 @@ const TeamMemberProfileCard: FC<{
         />
         <AvatarFallback>teamMemner Pic</AvatarFallback>
       </Avatar>
-      <h2>{name}</h2>
-      <h3 className="flex justify-end">{jobTitle}</h3>
+      <h3>{name}</h3>
+      <h4 className="flex justify-end">{jobTitle}</h4>
     </div>
   );
 };

@@ -8,17 +8,30 @@
     "aboutTitle": "Página de Sobre",
     "profile": "Perfil",
     "profileLink": "about/profile",
-    "profileTitle": "Página de Perfil"
+    "profileTitle": "Página de Perfil",
+    "products": "Productos",
+    "productsLink": "products",
+    "productsTitle": "Products page"
   },  
   "HomePage": {
     "HeaderSection":{
       "title": "Modelado 3D para Fabricación y Aficiones"
      },
-      "about": "Ir a la página Sobre Nosotros"
+     "HeroSection":{
+      "header": "Modelado 3D de alta calidad al mejor precio",
+      "description": "Sólo fabricamos para usted productos impresos de la más alta calidad. Somos los mejores así que venga y compre con nosotros."
+     },
+     "SubscriptionGallery":{
+      "title": "Suscripciones",
+      "productsPageLink": "ver todos los productos",
+      "productsLink": "products"
     },
-    "AboutPage": {
+      "about": "Ir a la página Sobre Nosotros"
+  },
+  "AboutPage": {
       "HeaderSection":{
-      "title": "Sobre"
+      "title": "Sobre",
+      "companyDescription": "Somos una pequeña empresa especializada en impresiones 3D de alta resolución. Empezamos 2 amigos de la escuela secundaria con una pasión por el modelado 3D. Nuestra empresa está especializada en prototipos de alta resolución y modelos personalizados."
       },
       "FAQSection": {
         "question1": "What Programing languages do you know?",
@@ -28,11 +41,46 @@
         "question3": "How much time do you need for notice?",
         "answer3": "I can start next week"
       }
-    },
-    "ProfilePage": {
+  },
+  "ProfilePage": {
       "HeaderSection":{
       "title": "Perfil"
       }
-    }
-   
+  },
+  "ProductsPage": {
+      "HeaderSection":{
+      "title": "Productos"
+      },
+      "ProductGridSection":{
+      "title": "Todos los productos",
+      "subscriptionsHeader": "Suscripciones",
+      "premadeItemsHeader": "Artículos Prefabricados"
+      },
+      "SubscriptionCardTemplate":{
+        "title": "nivel",
+        "subscriptionLength": "mes",
+        "description": "impresiones al mes"
+        }
+  },
+  "ProductOptionsInformation":{
+      "SubscriptionOption1":{
+        "option1SubscriptionImage": "IvanBleminse.jpeg",
+        "option1SubscriptionLength": "1 impresión al mes",
+        "option1SubscriptionPrice": 5,
+        "option1SubscriptionDescription": "1 impresión al mes"
+      },
+      "SubscriptionOption2":{
+        "option2SubscriptionImage": "IvanBleminse.jpeg",
+        "option2SubscriptionLength": "4 impresiones al mes",
+        "option2SubscriptionPrice": 15,
+        "option2SubscriptionDescription": "4 impresiones al mes"
+      },
+      "SubscriptionOption3":{
+        "option3SubscriptionImage": "IvanBleminse.jpeg",
+        "option3SubscriptionLength": "8 impresiones al mes",
+        "option3SubscriptionPrice": 30,
+        "option3SubscriptionDescription": "8 impresiones al mes"
+      }
   }
+   
+}

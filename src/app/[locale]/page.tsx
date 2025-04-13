@@ -1,12 +1,17 @@
 // Import Nextjs components
-import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 
 // Import Local components
-import { ItemCardTemplate } from "../components/ProductsPage/ItemCardTemplate";
 import HeroSection from "../components/HomePage/HeroSection";
+import { SubscriptionGallery } from "../components/HomePage/SubscriptionGallery";
+
+// Import local data
+import { ourProductData } from "../components/data/productData";
+
+
+
 
 // Function for MetaData tag
 export async function generateMetadata({
@@ -25,6 +30,9 @@ export async function generateMetadata({
   };
 }
 
+
+
+
 // Function for HomePage
 export default function Home({
   params: { locale },
@@ -34,19 +42,17 @@ export default function Home({
   // Enable static rendering
   setRequestLocale(locale);
 
+  // Access the translations for the HomePage
   const t = useTranslations("HomePage.HeaderSection");
   return (
     <div>
       {/* <ModeToggle /> */}
       <h1>{t("title")}</h1>
       <HeroSection />
-      
-      <Link className="Link" href={"/"}>
-        This is a Link component
-      </Link>
-      {/* <Link href={"/about"}>{t("about")}</Link> */}
 
-      <ItemCardTemplate model="eagle.glft.SVG" />
+      {/* <Link href={"/about"}>{t("about")}</Link> */}
+      <SubscriptionGallery productData={ourProductData} />
+      {/* <ItemCardTemplate model="eagle.glft.SVG" /> */}
     </div>
   );
 }

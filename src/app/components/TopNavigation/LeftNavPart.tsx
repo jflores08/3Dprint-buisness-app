@@ -14,10 +14,10 @@ const LeftNavPart: FC<{
   return (
     <Fragment>
       {/* Logo navButton to Home with a px of 16px at md screen size */}
-      <div className="md:px-16">
+      <div className="md:px-16 mt-2">
         <Link href={"/"}>
           <Image
-            src={"/images/logo/cuativeLogo.png"}
+            src={"/images/logo/realityShiftLogo.png"}
             alt="Logo"
             priority={true}
             width={400}

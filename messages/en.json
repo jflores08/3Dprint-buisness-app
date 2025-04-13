@@ -10,18 +10,28 @@
     "profileLink": "about/profile",
     "profileTitle": "Profile page",
     "products": "Products",
-    "productsLink": "/products",
+    "productsLink": "products",
     "productsTitle": "Products page"
   },
   "HomePage": {
     "HeaderSection":{
       "title": "3D Modeling for Manufacturing and Hobbies"
     },
-      "about": "Go to the about page"
+    "HeroSection":{
+      "header": "Top 3D modeling for a top price!",
+      "description": "We manufacure only the highest quality printed products for you. We are the best so come and shop with us."
+     },
+    "SubscriptionGallery":{
+      "title": "Subscriptions",
+      "productsPageLink": "see all products",
+      "productsLink": "products"
     },
-    "AboutPage": {
+      "about": "Go to the about page"
+  },
+  "AboutPage": {
       "HeaderSection":{
-      "title": "About"
+      "title": "About",
+      "companyDescription": "We are a small buisness that specializes in high resolution 3D prints. We were started 2 high school friends with a passion for 3D modeling. Our company speacializes in high batch prototype renderings and custom personalized models."
       },
       "FAQSection": {
         "question1": "What Programing languages do you know?",
@@ -31,16 +41,43 @@
         "question3": "How much time do you need for notice?",
         "answer3": "I can start next week"
       }
-    },
-    "ProfilePage": {
+  },
+  "ProfilePage": {
       "HeaderSection":{
       "title": "Profile"
       }
-    },
-    "ProductsPage": {
+  },
+  "ProductsPage": {
       "HeaderSection":{
       "title": "Products"
+      },
+      "ProductGridSection":{
+        "title": "All products",
+        "subscriptionsHeader": "Subscriptions",
+        "premadeItemsHeader": "Premade Items"
+      },
+      
+      "SubscriptionCardTemplate":{
+        "title": "level",
+        "subscriptionLength": "month",
+        "description": "prints per month"
+        }
+      },
+      "ProductOptionsInformation":{
+        "SubscriptionOption1":{
+          "subscriptionLength": "1 print a month",
+          "subscriptionPrice": 5,
+          "subscriptionDescription": "One print a month"
+        },
+        "SubscriptionOption2":{
+          "subscriptionLength": "4 prints a month",
+          "subscriptionPrice": 15,
+          "subscriptionDescription": "4 prints a month"
+        },
+        "SubscriptionOption3":{
+          "subscriptionLength": "8 prints a month",
+          "subscriptionPrice": 30,
+          "subscriptionDescription": "8 prints a month"
+        }
       }
-    }
-   
-  }
+}
