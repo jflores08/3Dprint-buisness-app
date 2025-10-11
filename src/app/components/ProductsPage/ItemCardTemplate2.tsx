@@ -9,7 +9,7 @@ import Image from "next/image";
 // Import shadcn components
 import { Card, CardContent } from "@/components/ui/card";
 
-const ItemCardTemplate: FC<{
+const ItemCardTemplate2: FC<{
   itemName: string;
   itemImage: string;
   itemDescription: string;
@@ -17,18 +17,15 @@ const ItemCardTemplate: FC<{
   currency: string;
 }> = ({ itemName, itemImage, itemDescription, itemPrice, currency }) => {
   return (
-    <Card
-      id="itemCardTemplate"
-      className=" max-w-72 min-w-72 max-h-72 min-h-72 border border-black content-center"
-    >
-      <CardContent className="p-4 flex flex-row gap-x-9">
-        <Image
-          width={60}
-          height={60}
+    <Card id="itemCardTemplate" className="border border-black content-center">
+      <CardContent className="p-1">
+        {/* <Image
+          width={200}
+          height={200}
           alt="Model Photo"
-          className="w-60 h-auto"
+          className="w-200px h-200px"
           src={`/images/products/${itemImage}`}
-        />
+        /> */}
         <div className=" flex flex-col content-center  ">
           <h3 className="mb-5">{itemName}</h3>
           <h4>{`$${itemPrice} ${currency}`}</h4>
@@ -39,4 +36,4 @@ const ItemCardTemplate: FC<{
   );
 };
 
-export { ItemCardTemplate };
+export { ItemCardTemplate2 };

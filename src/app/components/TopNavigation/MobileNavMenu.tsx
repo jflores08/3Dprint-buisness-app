@@ -7,7 +7,13 @@ import { usePathname } from "next/navigation";
 // Import local components
 import MobileMenuIcon from "../svg/MobileMenuIcon";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+  SheetDescription,
+} from "@/components/ui/sheet";
 
 // Import custom components
 import { ModeToggle } from "./mode-toggle";
@@ -19,7 +25,7 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
   const pathname = usePathname();
 
   return (
-    <Fragment>
+    <>
       <Sheet>
         <SheetTrigger asChild>
           {/* SheetTrigger set to custom outline button and MobileMenuIcon centered vertically */}
@@ -28,6 +34,10 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
           </Button>
         </SheetTrigger>
         <SheetContent side={"top"}>
+          <SheetTitle className="flex justify-center underline mb-3">
+            Menu
+          </SheetTitle>
+          <SheetDescription></SheetDescription>
           {/* Navbar Links flexbox */}
           <div className="flex flex-col">
             {/* Pages map to Navbar links function */}
@@ -53,7 +63,7 @@ const MobileNavMenu: FC<{ pages: { name: string; path: string }[] }> = ({
           </div>
         </SheetContent>
       </Sheet>
-    </Fragment>
+    </>
   );
 };
 
