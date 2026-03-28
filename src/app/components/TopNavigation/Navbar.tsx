@@ -11,7 +11,7 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
   // Access the translations for the Navbar
   const t = useTranslations("NavbarLinks");
 
-  // Define pages for to display in navigation bar
+  // Define pages to display in navigation bar
   const pages = [
     { name: t("home"), path: `/${locale}`, external: false },
     { name: t("about"), path: `/${locale}/${t("aboutLink")}`, external: false },
@@ -20,6 +20,9 @@ const Navbar: FC<{ locale: string }> = ({ locale }) => {
       path: `/${locale}/${t("productsLink")}`,
       external: false,
     },
+    {name: t("checkout"),
+    path: `/${locale}/${t("checkoutLink")}`,
+    external: false,}
   ];
 
   // start of html

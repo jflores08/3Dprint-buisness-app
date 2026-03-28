@@ -11,7 +11,10 @@
     "profileTitle": "Página de Perfil",
     "products": "Productos",
     "productsLink": "products",
-    "productsTitle": "Products page"
+    "productsTitle": "Products page",
+    "checkout": "Pasar por Caja",
+    "checkoutLink": "checkout",
+    "checkoutTitle": "Página de pago"
   },  
   "HomePage": {
     "HeaderSection":{

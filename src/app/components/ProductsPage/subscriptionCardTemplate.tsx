@@ -21,7 +21,7 @@ const SubscriptionCardTemplate: FC<{
 
   return (
     <Card
-      id="itemCardTemplate"
+      id="subscriptionCardTemplate"
       className=" max-w-72 min-w-72 border border-black content-center"
     >
       <CardContent className="flex flex-row justify-between">
@@ -29,7 +29,7 @@ const SubscriptionCardTemplate: FC<{
           width={60}
           height={60}
           alt="Model Photo"
-          className="mt-6 mr-6 "
+          className="mt-6 mr-6 w-full h-auto"
           src={`/images/products/${itemImage}`}
         />
         <div className="mt-6 flex flex-col content-center  ">

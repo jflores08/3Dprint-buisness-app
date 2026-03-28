@@ -5,7 +5,7 @@ import { FC } from "react";
 import { useTranslations } from "next-intl";
 
 // Import local components
-import { ItemCardTemplate } from "../ProductsPage/ItemCardTemplate";
+import { ItemCardTemplate } from "./ItemCardTemplate";
 import { SubscriptionCardTemplate } from "./subscriptionCardTemplate";
 // import { Grid, Stack, Box } from "@mui/material";
 
@@ -44,7 +44,7 @@ const AllProductsGallery: FC<{
       {/* Section of All products */}
       <div
         id="allProductsGallerySection"
-        className="flex flex-col mt-10 mb-10 justify-center"
+        className="flex flex-col pl-10 pr-10 mt-10 mb-10 justify-center"
       >
         {/* Grid of Subscriptions */}
         <div
@@ -76,19 +76,15 @@ const AllProductsGallery: FC<{
 
         {/* Grid of PremadeItems */}
         <div
-          id="subscriptionsGridSection"
+          id="premadeItemsGridSection"
           className="flex flex-col mt-10 mb-10 justify-center"
         >
           <h3>{t("premadeItemsHeader")}</h3>
-          <div
-            id="premadeItems-Grid"
-            className="grid grid-cols-12 gap-4 mb-20 justify-items-center"
-          >
+          <div id="premadeItems-Grid" className="">
             {/* <div className="container grid-col-12 mb-80 griditems-center justify-center"> */}
             {printItemData.map((printItem) => (
               <div
                 id="itemCardDiv"
-                className="lg:col-span-4 xs:col-span-12 flex justify-center"
                 key={printItemData.indexOf(printItem)}
               >
                 <ItemCardTemplate

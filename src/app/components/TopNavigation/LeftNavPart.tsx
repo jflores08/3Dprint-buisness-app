@@ -22,7 +22,8 @@ const LeftNavPart: FC<{
             priority={true}
             width={400}
             height={100}
-          ></Image>
+            className="w-full h-auto"
+          />
         </Link>
       </div>
       {/* Navbar Links to pages Flexbox */}
