@@ -7,17 +7,16 @@ import { FC } from "react";
 import Image from "next/image";
 
 // Import shadcn components
-import { Card, CardContent, CardDescription } from "@/components/ui/card";
 
-const ItemCardTemplate: FC<{
+const PremadeCardTemplate: FC<{
   itemName: string;
   itemImage: string;
   itemDescription: string;
   itemPrice: number;
 }> = ({ itemName, itemImage, itemDescription, itemPrice }) => {
   return (
-    <Card id="itemCardTemplate" className="flex flex-col h-full p-6">
-      <CardContent className="itemCardSubGrid">
+    <div id="itemCardTemplate" className="h-full p-6">
+      <div id="itemCardContent" className="itemCardSubGrid">
         <Image
           width={60}
           height={60}
@@ -29,10 +28,12 @@ const ItemCardTemplate: FC<{
           <h3 className="">{itemName}</h3>
           <h4>{`$${itemPrice}`}</h4>
         </div>
-      </CardContent>
-      <CardDescription className="self-end">{itemDescription}</CardDescription>
-    </Card>
+      </div>
+      <div id="itemCardDescription" className="">
+        {itemDescription}
+      </div>
+    </div>
   );
 };
 
-export { ItemCardTemplate };
+export { PremadeCardTemplate };

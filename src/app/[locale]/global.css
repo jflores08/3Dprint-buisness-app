@@ -204,22 +204,23 @@
 
 /* Components */
 
-#premadeItems-Grid{
+#premadeItemsGrid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(210px, 1fr));
   gap: 2rem;
 }
 
-.itemCardSubGrid{
+/* .itemCardSubGrid{
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
-}
+} */
 
 #itemCardTemplate{
-  /* height: minmax(1fr, max-content); */
   border-color: black;
   border: 2px;
   background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
