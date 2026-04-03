@@ -219,8 +219,9 @@
 #itemCardTemplate{
   border-color: black;
   border: 2px;
-  background-color: aquamarine;
+  background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px;
 }

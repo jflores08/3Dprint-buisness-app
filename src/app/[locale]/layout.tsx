@@ -1,24 +1,17 @@
-
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
-import {setRequestLocale} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-
+import { setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 
 // // Import Local Components
 import "./global.css";
 import { ThemeProvider } from "../components/theme-provider";
 import { Navbar } from "../components/TopNavigation/Navbar";
-import {routing} from '@/i18n/routing';
+import { Footer } from "../components/Footer/Footer";
+import { routing } from "@/i18n/routing";
 
 const inter = Inter({ subsets: ["latin"] });
-
-
- 
-
-
-
 
 // const metadata: Metadata = {
 //   title: title,
@@ -28,27 +21,20 @@ const inter = Inter({ subsets: ["latin"] });
 // )
 // }
 
-
-
 export default async function RootLayout({
   children,
   params: { locale },
 }: {
   children: React.ReactNode;
   params: { locale: string };
-  }) {
-
-
-
-      // Ensure that the incoming `locale` is valid
+}) {
+  // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
-
   // Enable static rendering
   setRequestLocale(locale);
-
 
   const messages = await getMessages();
 
@@ -64,6 +50,9 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
             <Navbar locale={locale} />
             {children}
+            <footer>
+              <Footer locale={locale} />
+            </footer>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
